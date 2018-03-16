@@ -24,13 +24,15 @@
 <script>
 export default {
   name: 'app',
-  data (){
+  data(){
     return{
 
     }
   },
-  method:{
-
+  methods:{
+    test(){
+      console.log(111)
+    }
   }
 }
 </script>
@@ -54,34 +56,47 @@ export default {
   background-color: @cl-primary;
   span{
     flex: 1;
-    padding: 20px 0;
+    padding: 15px 0;
     &:first-child{text-align: left;padding-left: 12px;}
     &:last-child{text-align: right;padding-right: 12px;}
     .download-app{
       display: inline-block;
-      width: 92px;
-      height: 37px;
-      line-height: 37px;
+      width: 80px;
+      height: 30px;
+      line-height: 32px;
       border: 1px solid rgba(255,255,255,0.4);
       color: #fff;
-      border-radius: 35px;
+      border-radius: 25px;
       text-align: center;
+      font-weight: 600;
     }
   }
   svg{
-    width: 163px;
-    height: 32px;
+    width: 143px;
+    height: 30px;
   }
 }
 .nav-wrap{
+  position: relative;
   display: flex;
+  &:before{
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    content: '';
+    width: 200%;
+    border-bottom: 1px solid #f1eded;
+    transform-origin: 0 0;
+    transform: scale(0.5,0.5);
+    box-sizing: border-box;
+  }
   .nav-bar{
     flex: 1;
     text-align: center;
     color: #4d4d4d;
     span{
       display: inline-block;
-      padding: 12px 5px;
+      padding: 10px 5px 8px;
       border-bottom: 2px solid @cl-primary;
     }
   }
