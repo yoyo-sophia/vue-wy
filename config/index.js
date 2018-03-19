@@ -17,6 +17,13 @@ module.exports = {
         pathRewrite:{
           '^/api':''
         }
+      },
+      '/qq':{
+        target:'https://c.y.qq.com/soso/fcgi-bin/search_for_qq_cp',
+        changeOrigin:true,
+        pathRewrite:{
+          '^/qq':''
+        }
       }
     },
 

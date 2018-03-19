@@ -10,9 +10,9 @@
         </span>
       </div>
       <div class="nav-wrap">
-        <router-link :class="{active_link : nav_active }" class="nav-bar" to='/wyRecommend'><span>推荐音乐</span></router-link>
-        <router-link :class="{active_link : nav_active }" class="nav-bar" to='/wyHot'><span>热歌榜</span></router-link>
-        <router-link :class="{active_link : nav_active }" class="nav-bar" to='/wySearch'><span>搜索</span></router-link>
+        <router-link class="nav-bar" to='/wyRecommend'><span>推荐音乐</span></router-link>
+        <router-link class="nav-bar" to='/wyHot'><span>热歌榜</span></router-link>
+        <router-link class="nav-bar" to='/wySearch'><span>搜索</span></router-link>
       </div>
     </div>
     <div class="content-wrap">
@@ -44,6 +44,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   background-color: #fcfcfd;
+}
+.router-link-active{
+  span{
+    color: @cl-primary;
+    border-bottom: 2px solid @cl-primary;
+  }
 }
 //header
 .wy-header{
@@ -92,11 +98,11 @@ export default {
     flex: 1;
     text-align: center;
     color: #4d4d4d;
-    .nav_active{
-      span{
-        border-bottom: 2px solid @cl-primary;
-      }
-    }
+    /*<!--.nav_active{-->*/
+      /*<!--span{-->*/
+        /*<!--border-bottom: 2px solid @cl-primary;-->*/
+      /*<!--}-->*/
+    /*<!--}-->*/
     span{
       display: inline-block;
       padding: 10px 5px 8px;
@@ -104,7 +110,6 @@ export default {
   }
 }
 .content-wrap{
-  padding-top: 20px;
   background-color: #fcfcfd;
 }
 </style>

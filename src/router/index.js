@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import wyHot from '@/components/hot/hot'
 import wySearch from '@/components/search/search'
 import wyRecommend from '@/components/recommend/recommend'

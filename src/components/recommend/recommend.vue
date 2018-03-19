@@ -72,7 +72,7 @@
         url:'/api/playlist/detail?id=19723756'
       }).then(res=>{
         this.recommendList = res.data.result.tracks;
-        console.log(this.recommendList);
+        // console.log(this.recommendList);
       });
 
 
@@ -113,7 +113,7 @@
   .recommend-title{
     position: relative;
     padding-left: 10px;
-    margin: 0 0 14px 0;
+    margin: 20px 0 14px 0;
     font-size: 18px;
     font-weight: 400;
     &::before{
@@ -167,7 +167,7 @@
       font-family: Helvetica, sans-serif;
     }
     .song-name{
-      font-size: 17px;
+      font-size: 16px;
       color: #333;
       line-height: 1.5;
       font-weight: 500;
