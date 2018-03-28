@@ -1,10 +1,10 @@
 <template>
   <div>
     <initial @addListenToChild="conveyVal"  v-if="searchInit"></initial>
-    <search-finnal :songName="searchVal" v-if="searchEnd"></search-finnal>
+    <search-finnal v-if="searchEnd"></search-finnal>
+    <!--<search-finnal :songName="searchVal" v-if="searchEnd"></search-finnal>-->
   </div>
 </template>
-
 <script>
   import initial from './initial'
   import searchFinnal from './search_finnal'
@@ -23,7 +23,7 @@
     },
     methods:{
       conveyVal:function(val){
-        this.searchVal = val;
+        // this.searchVal = val;
       }
     }
   }
